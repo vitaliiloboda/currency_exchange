@@ -1,0 +1,52 @@
+body {
+    /*background-image: url("https://thumbs.dreamstime.com/b/old-world-map-worn-grungy-40347653.jpg");*/
+    background-image: url("/static/img/map2.jpeg");
+    /*height: 700px;*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /*background-color: darkslategrey;*/
+    /*background-size: 900px;*/
+    /*background-position: right top;*/
+    /*border-style: solid;*/
+    /*background-position: center;*/
+}
+
+.container {
+    /*background-color: blueviolet;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+    margin-top: 15%;
+    width: 30%;
+    padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 {
+    color: lightblue;
+    /*margin-top: auto;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*background-color: green;*/
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+h2 {
+    color: lightblue;
+}
+
+.currency-form {
+    background-color: lightblue;
+    width: 300px;
+    /*height: 200px;*/
+    border-style: outset;
+    padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    /*margin-bottom: 20px;*/
+    /*margin-top: 10%;*/
+
+}

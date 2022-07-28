@@ -1,0 +1,33 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container">
+        <h1>Currency Exchange</h1>
+        <h2>{{ result_amount }}</h2>
+        <form class="currency-form" action="">
+            <div>
+                <label for="currency_from">From:</label>
+                <select id="currency_from" type="text">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+
+                <label for="currency_to">To</label>
+                <select id="currency_to" type="text">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+            <br>
+            <label for="amount">Ammount:</label>
+            <input id="amount" type="text">
+            <br>
+            <br>
+            <div>
+                <label for="result">Result: </label><span id="result">0</span>
+            </div>
+        </form>
+    </div>
+{% endblock %}
