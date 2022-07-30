@@ -6,27 +6,31 @@
     <div class="container">
         <h1>Currency Exchange</h1>
         <h2>{{ result_amount }}</h2>
-        <form class="currency-form" action="">
+        <form class="currency-form" action="" method="post">
+            {% csrf_token %}
             <div>
                 <label for="currency_from">From:</label>
-                <select id="currency_from" type="text">
+                <select id="currency_from" type="text" name="currency_from">
                     <option value="USD">USD</option>
                     <option value="EUR">EUR</option>
                 </select>
 
                 <label for="currency_to">To</label>
-                <select id="currency_to" type="text">
+                <select id="currency_to" type="text" name="currency_to">
                     <option value="USD">USD</option>
                     <option value="EUR">EUR</option>
                 </select>
             </div>
             <br>
             <label for="amount">Ammount:</label>
-            <input id="amount" type="text">
+            <input id="amount" type="number" name="amount" placeholder="Enter the number">
             <br>
             <br>
             <div>
                 <label for="result">Result: </label><span id="result">0</span>
+            </div>
+            <div>
+                <button type="submit">Calculate</button>
             </div>
         </form>
     </div>
